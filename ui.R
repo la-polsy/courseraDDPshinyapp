@@ -30,7 +30,8 @@ shinyUI(fluidPage(
            an Exploratory Analysis panel will appear with a plot to show their direct relation.
            If the predictor is a factor, a violin plot will be displayed, otherwise a scatter plot.<br>
            When an outcome and a predictor for the linear model are chosen, a Linear Model panel appears,
-           displaying the fitted model's formula and other information that may be valuable to correct the choice of the predictors."),
+           displaying the fitted model's formula and other information that may be valuable to correct the choice of the predictors.<br><br>
+           The code of this app is available <a href='https://github.com/la-polsy/courseraDDPshinyapp'>here</a>"),
       conditionalPanel(
         condition = "input.outcome != 'Select' & input.exploratoryPred != 'Select'",
         h2("Exploratory Analysis"),
