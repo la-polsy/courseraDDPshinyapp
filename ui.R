@@ -23,7 +23,7 @@ shinyUI(fluidPage(
     
     # Main panel for explanation and data visualization
     mainPanel(
-      h2("Project Explanation"),
+      h2("App Explanation"),
       HTML("This Shiny app allows some interactive exploration of the data contained in the <b>mtcars</b> dataframe.
            In the left panel, you can choose which variable to have as outcome/predictor to perform either exploratory analysis or linear regression.<br><br>
            When an outcome and a predictor for the exploratory analysis are chosen,

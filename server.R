@@ -57,7 +57,7 @@ shinyServer(function(input, output, session) {
       pred <- chosenExploratoryPred()
       g <- ggplot(dataset, aes(x = get(pred), y = get(outc)))
       #  plot violin only for factors, scatter otherwise
-      if(class(cars[pred][,1]) == "factor"){
+      if(class(dataset[pred][,1]) == "factor"){
         g <- g + 
           geom_violin(aes(fill = get(pred))) +
           labs(fill = "Predictor")
